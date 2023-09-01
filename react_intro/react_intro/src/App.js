@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from './images/peter_pan.jpeg';
+import './App.css'; 
+import MyApp from './NewComponent';
+import Profile from './Profile';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+
+        <h1> dette er en komponent som heter app som ligger i app.js</h1> 
+        <img src={logo} className="App-logo" alt="logo" />        
+        <MyApp /> 
+        <Profile />
+        <logo />
+
+       
       </header>
     </div>
   );
 }
 
 export default App;
+
+
+
+

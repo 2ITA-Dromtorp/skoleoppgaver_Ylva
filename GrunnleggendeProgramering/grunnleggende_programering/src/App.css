@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #101113;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -37,9 +37,7 @@
   }
 }
 
-
-
-/* In your CSS */
-.avatar {
-  border-radius: 50%;
+.deloppgave {
+  font-family: 'Times New Roman', Times, serif;
+  color: #596988;
 }
