@@ -14,18 +14,18 @@
 }
 
 .App-header {
-  background-color: #101113;
+  background-color: #293628;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(237, 170, 170);
 }
 
 .App-link {
-  color: #61dafb;
+  color: #6b94bd;
 }
 
 @keyframes App-logo-spin {
@@ -39,5 +39,5 @@
 
 .deloppgave {
   font-family: 'Times New Roman', Times, serif;
-  color: #596988;
+  color: #9d6371;
 }
