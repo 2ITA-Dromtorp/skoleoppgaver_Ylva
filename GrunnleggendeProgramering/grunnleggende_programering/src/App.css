@@ -41,3 +41,23 @@
   font-family: 'Times New Roman', Times, serif;
   color: #9d6371;
 }
+
+
+input[type=number] {
+  background-color: #47665b;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+
+
+}
+
+
+.bigBang {
+  margin-left: 20cm;
+  
+}
+
