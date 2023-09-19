@@ -3,7 +3,7 @@ import Oppgave1 from './Oppgave1';
 import Oppgave2 from './Oppgave2';
 import Klokke from './klokke';
 import Nedtelling from './Nedtelling';
-import PapirSpill from './PapirSpill';
+import Stein_saks_papir from './stein_saks_papir';
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
       <header className="App-header">
 
         
-      <PapirSpill />
+      <Stein_saks_papir />
 
       </header>
     </div>
