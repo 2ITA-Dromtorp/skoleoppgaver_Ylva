@@ -127,4 +127,66 @@
   color: #A9A57C;
   color: #556151;
 }
+/*
+.profil {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid black;
+  height: 100vh;
+  background-color: #D27335;
 
+
+}
+
+.profil-info {
+  display: flex;
+  justify-content: center;
+  align-items: top;
+  flex-direction: column;
+  border: solid black;
+  background-color: #432B1E;
+  height: 97%;
+  width: 95%;
+}
+
+
+.boks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid black;
+  height: 90%;
+  width: 95%;
+  background-color: #556151;
+}*/
+
+.profil {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.boks {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 25vw;
+  height: 75vh;
+  bottom: -10vh;
+  border: solid 1px black;
+  padding: 10px;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.boks img {
+  width: 80%;
+  height: 60%;
+  border: 1px solid black;
+}
+
+.boks button {
+  width: 80%;
+  height: 10%;
+}

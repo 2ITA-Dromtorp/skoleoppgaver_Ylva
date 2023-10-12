@@ -15,9 +15,8 @@ function App() {
     <Routes>
     <Route path='/' element={<Klassekart />} />
     <Route path='/:profile' element={<Profile />} />
-    <Route />
+    </Routes>
 
-  </Routes>
   ); 
 }
 

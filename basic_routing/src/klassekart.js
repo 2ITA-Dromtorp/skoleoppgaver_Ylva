@@ -32,7 +32,7 @@ export default function Klassekart() {
           <Elev name="sander"/>
           <div className='gang'></div>
           <Elev name="Ylva"/>
-          <Elev name="vanessa"/>
+          <Elev name="Vanessa"/>
           <Elev name="chen"/>
           
       </div>
