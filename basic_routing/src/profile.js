@@ -26,6 +26,8 @@ useEffect(() => {
     })
 
 }, [])
+
+
     return (
         <div className="profil">
             <div className="profil-info">

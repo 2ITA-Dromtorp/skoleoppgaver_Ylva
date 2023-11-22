@@ -1,6 +1,7 @@
 
-
+document.getElementById("demo").innerHTML = json;
 let json = {
+    
     "elever" : [
         {
             "navn" : "Chen",
@@ -32,6 +33,7 @@ let json = {
             "tlf" : "98128376",
             "klasse" : "2ITa"
         }
+        
     ]
 }
 

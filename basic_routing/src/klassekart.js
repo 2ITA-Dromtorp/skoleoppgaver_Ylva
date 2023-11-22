@@ -1,17 +1,31 @@
+import { json } from 'react-router-dom';
 import Elev from './Elev';
+
 
 
 
 export default function Klassekart() {
 
+    function Randomize (){
+        json.sort(function(){return 0.5 - Math.random()});
+        document.getElementById("demo").innerHTML = json;
+    }
+
+    
+
     return (
+
+        
 
         <div className='container'>
       <div className='teacher'>
         <h1> klassekart 2ITA </h1>
         <Elev name="lærer" />
+        <button onClick={(Randomize)}>randomize</button>
+        <p id='demo'></p>
 
       </div>
+
 
       <div className='first_row'>
 
