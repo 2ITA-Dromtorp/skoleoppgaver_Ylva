@@ -4,6 +4,8 @@ import data from './images/data.jpg';
 
 function App() {
   return (
+
+    
     <div className="App">
       <header className="App-header">
         <button id='hjem'> drømtorp hjem </button>
