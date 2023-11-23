@@ -22,7 +22,7 @@
   
 }
 
-#logg-inn {
+#sign-up {
   margin-right: 2rem;
 }
 
@@ -39,6 +39,12 @@
   justify-content: center;
   align-items: center;
 
+
+}
+
+.les-mer {
+  margin: 1rem;
+  background-color: lightcoral;
 
 }
 
@@ -61,8 +67,9 @@
 
 }
 
-p {
+.App p {
   border: solid black;
+  margin: 1rem;
 }
 
 .fag {
@@ -73,51 +80,8 @@ p {
   margin-right: 2em;
 }
 
-/*#data {
-background-color: #bcc5db;
-display: flex;
-flex-direction: row;
-height: 10vh;
-width: 50rem;
-justify-content: center;
-align-items: center;
-border: solid #282c34;
-  
-}
-#norsk {
-  background-color: #bcc5db;
-  display: flex;
-  flex-direction: row;
-  height: 10vh;
-  width: 50rem;
-  justify-content: center;
-  align-items: center;
-  border: solid #282c34;
-    
-}
 
-#mat {
-  background-color: #bcc5db;
-  display: flex;
-  flex-direction: row;
-  height: 10vh;
-  width: 50rem;
-  justify-content: center;
-  align-items: center;
-  border: solid #282c34;
-}
 
-#gym {
-  background-color: #bcc5db;
-  display: flex;
-  flex-direction: row;
-  height: 10vh;
-  width: 50rem;
-  justify-content: center;
-  align-items: center;
-  border: solid #282c34;
-    
-}*/
 
 .App-link {
   color: #61dafb;

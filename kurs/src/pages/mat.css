@@ -1,0 +1,44 @@
+.mat{
+    text-align: center;
+    min-height: 100vh;
+    background-color: #342f28;
+  }
+
+
+.mat-header {
+    background-color: #342e28;
+    min-height: 20vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: calc(10px + 2vmin);
+    color: white;
+
+}
+
+#sign-up {
+    margin-right: 2rem;
+}
+  
+#mat-button {
+    margin: 1rem;
+    background-color: rgb(164, 193, 208);
+}
+
+
+#hjem {
+    height: 5em;
+    width: 10em;
+    margin-left: 2rem;
+}
+
+.mat-body {
+    background-color: #bebfa5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #222429;
+  
+}

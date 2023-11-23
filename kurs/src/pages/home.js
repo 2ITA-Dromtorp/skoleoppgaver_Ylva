@@ -1,27 +1,31 @@
-
+import '../App.css';
 import data from '../images/data.jpg';
 import gym from '../images/gym.jpg';
 import mat from '../images/mat.jpg';
 import norsk from '../images/norsk-flagg.jpg';
 import { useNavigate } from "react-router-dom";
+import { Outlet } from 'react-router-dom';
 
 
-export function home() {
+export function Home() {
+
+
+    const navigate = useNavigate();
 
     return (
 
         <div className="App">
           <header className="App-header">
-            <button id='hjem'> drømtorp hjem </button>
+            <button onClick={()=> {navigate('/home')}} id='hjem'> drømtorp hjem </button>
             <p> voksenopplæring </p>
             <p> søk </p>
-            <button id='logg-inn'> logg inn </button>
+            <button onClick={()=> {navigate('/logg-inn')}} id='sign-up'> logg inn </button>
     
           </header>
+
           <body className='App-body'> 
             <div className='body-top'>
-              <p> kurs: </p>
-              <button id='meld-på'> meld deg på! </button>
+              <h2> kurs: </h2>
             </div>
     
             <div className='kurs' id='data'>
@@ -36,7 +40,7 @@ export function home() {
                   <img src={data} className='bilde' alt='bilde av kode på en skjerm'/>
                 </div>
                 <div className='bilde-knapp'>
-                  <button onClick={()=> {navigate('/data-kurs')}} className='les-mer'> les mer her </button>
+                  <button onClick={()=> {navigate('/data-kurs')}} className='les-mer'> les mer og meld deg på </button>
                 </div>
               </div>
             </div>
@@ -50,10 +54,10 @@ export function home() {
     
               <div className='til-høyre'>
                 <div className='bildeer'> 
-                  <img src={norsk} className='bilde' alt='bilde av kode på en skjerm'/>
+                  <img src={norsk} className='bilde' alt='bilde av norsk flagg'/>
                 </div>
                 <div className='bilde-knapp'>
-                  <button className='les-mer'> les mer her </button>
+                  <button onClick={()=> {navigate('/norsk-kurs')}} className='les-mer'> les mer og meld deg på </button>
                 </div>
               </div>
             </div>
@@ -67,10 +71,10 @@ export function home() {
     
               <div className='til-høyre'>
                 <div className='bildeer'> 
-                  <img src={mat} className='bilde' alt='bilde av kode på en skjerm'/>
+                  <img src={mat} className='bilde' alt='bilde av fem skåler med forskjellig sunn mat'/>
                 </div>
                 <div className='bilde-knapp'>
-                  <button className='les-mer'> les mer her </button>
+                  <button onClick={()=> {navigate('/mat-kurs')}} className='les-mer'> les mer og meld deg på </button>
                 </div>
               </div>
               
@@ -85,10 +89,10 @@ export function home() {
     
               <div className='til-høyre'>
                 <div className='bildeer'> 
-                  <img src={gym} className='bilde' alt='bilde av kode på en skjerm'/>
+                  <img src={gym} className='bilde' alt='bilde av treningssenter'/>
                 </div>
                 <div className='bilde-knapp'>
-                  <button className='les-mer'> les mer her </button>
+                  <button onClick={()=> {navigate('/gym-kurs')}} className='les-mer'> les mer og meld deg på </button>
                 </div>
               </div>
             </div>
@@ -105,4 +109,4 @@ export function home() {
 
 }
 
-export default home; 
+export default Home; 

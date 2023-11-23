@@ -1,0 +1,44 @@
+.norsk {
+    text-align: center;
+    min-height: 100vh;
+    background-color: #282a34;
+  }
+
+
+.norsk-header {
+    background-color: #282b34;
+    min-height: 20vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: calc(10px + 2vmin);
+    color: white;
+
+}
+
+#sign-up {
+    margin-right: 2rem;
+}
+  
+#norsk-button {
+    margin: 1rem;
+    background-color: rgb(223, 136, 136);
+}
+
+
+#hjem {
+    height: 5em;
+    width: 10em;
+    margin-left: 2rem;
+}
+
+.norsk-body {
+    background-color: #a5a7bf;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #222429;
+  
+}
