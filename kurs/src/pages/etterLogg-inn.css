@@ -1,0 +1,39 @@
+.etter {
+    text-align: center;
+    min-height: 100vh;
+    background-color: #283334;
+  }
+
+
+.etter-header {
+    background-color: #283034;
+    min-height: 20vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: calc(10px + 2vmin);
+    color: white;
+
+}
+
+#sign-up {
+    margin-right: 2rem;
+}
+
+
+#hjem {
+    height: 5em;
+    width: 10em;
+    margin-left: 2rem;
+}
+
+.etter-body {
+    background-color: #a5bfb7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #222429;
+  
+}

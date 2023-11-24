@@ -19,7 +19,7 @@ export default function Mat() {
                 <div className='tidsinfo'> 
                     <p> heimkunnskap kurset på drømtorp vidregående </p> 
                     <p> kommer til å vare fra 10 januar - 10 april.</p>
-                    <p> tirsdag og torsdag kl 18-20</p>
+                    <p> torsdag kl 18-20</p>
                 </div>
 
                 <div className='info'>

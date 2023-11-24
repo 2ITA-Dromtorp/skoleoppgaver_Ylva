@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import ReactDOM from 'react-dom/client';
+import { useEffect } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import Data from './pages/data';
 import Gym from './pages/gym';
@@ -10,10 +11,15 @@ import NoPage from './pages/noPage';
 import Layout from './pages/layout';
 import LoggInn from './pages/logg-inn';
 import Meld from './pages/meld';
+import Etter from './pages/etterLogg-inn';
 import { Link } from 'react-router-dom';
 
 
 function App() {
+
+ 
+  
+
   return (
     <>
     <Routes>
@@ -23,6 +29,7 @@ function App() {
 
         <Route path='/logg-inn' element={<LoggInn />} />
         <Route path='/meld-på' element={<Meld />} />
+        <Route path='/etter' element={<Etter />} />
         <Route path='/data-kurs' element={<Data />} />
         <Route path='/gym-kurs' element={<Gym />} />
         <Route path='/mat-kurs' element={<Mat />} />

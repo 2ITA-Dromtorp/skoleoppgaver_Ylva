@@ -19,7 +19,7 @@ export default function Gym() {
                 <div className='tidsinfo'> 
                     <p> kroppsøving kurset på drømtorp vidregående </p> 
                     <p> kommer til å vare fra 10 januar - 10 april.</p>
-                    <p> tirsdag og torsdag kl 18-20</p>
+                    <p> onsdag kl 18-20</p>
                 </div>
 
                 <div className='info'>
