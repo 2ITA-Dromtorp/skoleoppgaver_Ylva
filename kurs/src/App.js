@@ -12,6 +12,11 @@ import Layout from './pages/layout';
 import LoggInn from './pages/logg-inn';
 import Meld from './pages/meld';
 import Etter from './pages/etterLogg-inn';
+import DataF from './pages/dataFerdig';
+import GymF from './pages/gymFerdig';
+import NorskF from './pages/norskFerdig';
+import MatF from './pages/matFerdig';
+
 import { Link } from 'react-router-dom';
 
 
@@ -34,6 +39,10 @@ function App() {
         <Route path='/gym-kurs' element={<Gym />} />
         <Route path='/mat-kurs' element={<Mat />} />
         <Route path='/norsk-kurs' element={<Norsk />} />
+        <Route path='/dataf' element={<DataF />} />
+        <Route path='/gymf' element={<GymF />} />
+        <Route path='/norskf' element={<NorskF />} />
+        <Route path='/matf' element={<MatF />} />
         <Route path='*' element={<NoPage />} />
       
     </Routes>  

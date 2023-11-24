@@ -31,7 +31,7 @@ export default function Gym() {
                     <img src={gym} className='bilde' alt='bilde av treningssenter'/>
                 </div>
 
-                <button id='gym-button'> meld deg på </button>
+                <button onClick={()=> {navigate('/gymf')}} id='gym-button'> meld deg på </button>
 
             </div>
 

@@ -31,7 +31,7 @@ export default function Norsk() {
                     <img src={norsk} className='bilde' alt='bilde av norsk flagg'/>
                 </div>
 
-                <button id='norsk-button'> meld deg på </button>
+                <button onClick={()=> {navigate('/norskf')}} id='norsk-button'> meld deg på </button>
 
             </div>
 

@@ -31,7 +31,7 @@ export default function Data() {
                     <img src={data} className='bilde' alt='bilde av kode på en skjerm'/>
                 </div>
 
-                <button id='data-button'> meld deg på </button>
+                <button onClick={()=> {navigate('/dataf')}} id='data-button'> meld deg på </button>
 
             </div>
 

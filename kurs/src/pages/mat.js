@@ -31,7 +31,7 @@ export default function Mat() {
                     <img src={mat} className='bilde' alt='bilde av fem skåler med forskjellig sunn mat'/>
                 </div>
 
-                <button id='mat-button'> meld deg på </button>
+                <button onClick={()=> {navigate('/matf')}} id='mat-button'> meld deg på </button>
 
             </div>
 
