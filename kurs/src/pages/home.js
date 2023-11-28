@@ -5,6 +5,19 @@ import mat from '../images/mat.jpg';
 import norsk from '../images/norsk-flagg.jpg';
 import { useNavigate } from "react-router-dom";
 import { Outlet } from 'react-router-dom';
+import React from 'react';
+
+
+
+const WelcomeMessage = (props) => {
+  const { isLoggedIn, user } = props;
+  return (<div>
+    {isLoggedIn ? <h2>Welcome back, {user}!</h2> :
+      <p>Please log in to continue </p>
+    }
+  </div>)
+}
+
 
 
 export function Home() {
@@ -12,13 +25,21 @@ export function Home() {
 
     const navigate = useNavigate();
 
+    const user = "John";
+    const isLoggedIn = true;
+
+    
+
     return (
 
+      <>
+      <WelcomeMessage user={user} isLoggedIn = {isLoggedIn}/>
+
         <div className="App">
+
           <header className="App-header">
             <button onClick={()=> {navigate('/home')}} id='hjem'> drømtorp hjem </button>
             <p> voksenopplæring </p>
-            <p> søk </p>
             <button onClick={()=> {navigate('/logg-inn')}} id='sign-up'> logg inn </button>
     
           </header>
@@ -104,6 +125,7 @@ export function Home() {
     
           </footer>
         </div>
+        </>
       );
 
 
