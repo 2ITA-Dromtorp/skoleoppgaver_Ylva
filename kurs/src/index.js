@@ -5,7 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { createRoot } from 'react-dom/client';
 import {BrowserRouter} from 'react-router-dom';
-
+import { UserNameProvider, IsLoggedInProvider } from './pages/context';
 
 
 
@@ -13,9 +13,14 @@ import {BrowserRouter} from 'react-router-dom';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
+    <UserNameProvider>
+      <IsLoggedInProvider>
+        <BrowserRouter>
+          <App />
+        </BrowserRouter>
+      </IsLoggedInProvider>
+    </UserNameProvider>
+    
     
   </React.StrictMode>
 );

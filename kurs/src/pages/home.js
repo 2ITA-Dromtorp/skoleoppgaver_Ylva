@@ -5,7 +5,11 @@ import mat from '../images/mat.jpg';
 import norsk from '../images/norsk-flagg.jpg';
 import { useNavigate } from "react-router-dom";
 import { Outlet } from 'react-router-dom';
+import { useContext, useEffect, useState } from 'react';
+import { UserNameContext } from './context';
+import { IsLoggedInContext } from './context';
 import React from 'react';
+import LoggInn from './logg-inn';
 
 
 
@@ -23,17 +27,18 @@ const WelcomeMessage = (props) => {
 export function Home() {
 
 
+    const {userName, setuserName } = useContext(UserNameContext)
+    const {isLoggedIn, setisLoggedIn } = useContext(IsLoggedInContext)
     const navigate = useNavigate();
 
-    const user = "John";
-    const isLoggedIn = true;
+    
 
     
 
     return (
 
       <>
-      <WelcomeMessage user={user} isLoggedIn = {isLoggedIn}/>
+      <WelcomeMessage user={userName} isLoggedIn = {isLoggedIn}/>
 
         <div className="App">
 

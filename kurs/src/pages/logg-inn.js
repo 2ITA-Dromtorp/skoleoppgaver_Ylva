@@ -1,15 +1,24 @@
-import { useState } from 'react';
+import { useState , useEffect} from 'react';
 import './logg-inn.css';
 import { useNavigate } from "react-router-dom";
+import { useParams } from 'react-router-dom';
+import { useContext } from 'react';
+import { UserNameContext, IsLoggedInContext } from './context';
+
 
 export default function LoggInn() {
 
+
+        const {user} = useParams();
         const navigate = useNavigate();
+        const {userName, setuserName } = useContext(UserNameContext)
 
         const [username, setUsername] = useState("");
         const [number, setNumber] = useState("");
         const [epost, setEpost] = useState("");
         const [password, setPassword] = useState("");
+        const {isLoggedIn, setisLoggedIn } = useContext(IsLoggedInContext)
+
 
         const handleSubmit = () => {
             console.log(username, number, epost, password);
@@ -31,6 +40,8 @@ export default function LoggInn() {
             .then(async (res) => {
                             const data = await res.json();
                             console.log(data);
+                            setuserName(username)
+                            setisLoggedIn(true)
                         })
                         .catch((error) => {
                             console.error('Error fetching data:', error);
