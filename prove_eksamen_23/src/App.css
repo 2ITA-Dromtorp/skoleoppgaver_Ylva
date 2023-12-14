@@ -1,0 +1,129 @@
+#page-container {
+  position: relative;
+  text-align: center;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  padding-bottom: 8rem; /* Footer height */
+}
+
+.App-header {
+  background-color: #3f5956;
+  height: 9rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: rgb(240, 216, 186);
+}
+
+.App-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 40rem;
+  color: rgb(240, 216, 186);
+  background-color: #263533;
+}
+
+.boo {
+  padding: 2em;
+
+
+}
+
+.feil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 17rem;
+}
+
+#box {
+  background-color: #c8dacc;
+  color: rgb(90, 70, 40);
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  width: 20rem;
+  height: 5rem;
+  margin-bottom: 1rem;
+  overflow-wrap: break-word;
+  
+  
+}
+
+.eldre-feil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 15rem;
+  color: rgb(240, 216, 186);
+  background-color: #263533;
+
+}
+
+
+#knapp {
+background-color: #55715c;
+color: rgb(245, 223, 189);
+padding: 0.5rem;
+border: none;
+border-radius: 0.5rem;
+font-size: 1.5rem;
+}
+
+.App-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 8rem; /* Footer height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #3f5956;
+}
+
+#kontakt {
+  color: rgb(240, 216, 186);
+}
+
+.kontaktInfo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.info p {
+  padding: 0.5rem;
+  
+}
+
+#mail {
+  color: rgb(245, 179, 179);
+}
+
+#tele {
+  color: rgb(245, 234, 179);
+}
+
+#adresse {
+  color: rgb(209, 179, 245);
+}
+
+#sosial {
+  color: rgb(179, 230, 245);
+}
