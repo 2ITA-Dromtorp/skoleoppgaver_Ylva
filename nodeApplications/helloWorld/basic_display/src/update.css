@@ -1,0 +1,14 @@
+button {
+  background-color: rgb(237, 139, 196);
+  margin: 1em;
+  width: 20%;
+  height: 4em;
+  font-size: calc(10px + 2vmin);
+}
+
+#updateklikk {
+    background-color: rgb(222, 223, 164);
+    width: 80%;
+    height: 3em;
+  }
+

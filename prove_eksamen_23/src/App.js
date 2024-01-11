@@ -32,7 +32,7 @@ function App() {
   useEffect(() => {
     const savedMessages = localStorage.getItem('key');
     if (savedMessages) {
-      /*setMessages(JSON.parse(savedMessages));*/
+      setMessages(JSON.parse(savedMessages));
     }
   }, []);
 

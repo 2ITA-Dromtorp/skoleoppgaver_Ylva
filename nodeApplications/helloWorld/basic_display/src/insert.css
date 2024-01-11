@@ -1,0 +1,50 @@
+button {
+    background-color: rgb(237, 139, 196);
+    margin: 1em;
+    width: 20%;
+    height: 4em;
+  }
+  
+  #insertklikk {
+      background-color: rgb(164, 176, 223);
+      width: 80%;
+      height: 3em;
+    }
+  
+.text-box {
+    width: 100%;
+    height: 4em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.id {
+    width: 50%;
+}
+
+.fornavn {
+    width: 50%;
+}
+
+.etternavn {
+    width: 50%;
+}
+
+.klasse {
+    width: 50%;
+}
+
+.hobby {
+    width: 50%;
+}
+
+.kjonn {
+    width: 50%;
+}
+
+.datamaskin {
+    width: 50%;
+}
+

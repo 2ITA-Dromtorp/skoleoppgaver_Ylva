@@ -33,7 +33,7 @@ export default function Select() {
                         <th>datamaskin</th>
                         <th>hobby</th>
                         <th>klasse</th>
-                        <th>kjønn</th>
+                        <th>kjonn</th>
                         {/* add more colums based on your data structure */}
                     </tr>
                 </thead>
@@ -41,12 +41,12 @@ export default function Select() {
                     {customersData.map((customer) => (
                         <tr key={customer.ElevID}> 
                             <td>{customer.ElevID}</td>
-                            <td>{customer.fornavn}</td>
-                            <td>{customer.etternavn}</td>
-                            <td>{customer.datamaskin}</td>
-                            <td>{customer.hobby}</td>
-                            <td>{customer.klasse}</td>
-                            <td>{customer.kjønn}</td>
+                            <td>{customer.Fornavn}</td>
+                            <td>{customer.Etternavn}</td>
+                            <td>{customer.DatamaskinID}</td>
+                            <td>{customer.Hobby}</td>
+                            <td>{customer.Klasse}</td>
+                            <td>{customer.Kjonn}</td>
                         </tr>
                     ))}
                 </tbody>
