@@ -19,7 +19,17 @@ export default function Select() {
             .catch(error => console.log(error));
     };
 
-    //middleware
+    //delete
+    const handleDelete = async (id) =>{
+        try {
+            await axios.delete('http://localhost:3000/deleteuser/'+id); 
+            window.location.reload()
+            getCustomersData();
+        } catch (error) {
+            console.log(error);
+        }
+
+    }
 
 
     return (
@@ -34,6 +44,7 @@ export default function Select() {
                         <th>hobby</th>
                         <th>klasse</th>
                         <th>kjonn</th>
+                        <th>delete</th>
                         {/* add more colums based on your data structure */}
                     </tr>
                 </thead>
@@ -47,6 +58,10 @@ export default function Select() {
                             <td>{customer.Hobby}</td>
                             <td>{customer.Klasse}</td>
                             <td>{customer.Kjonn}</td>
+                            <td>
+                                <button className='deleteklikk' onClick={ e => handleDelete(customer.ElevID)}>delete</button>
+                               
+                            </td>
                         </tr>
                     ))}
                 </tbody>

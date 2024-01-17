@@ -8,7 +8,7 @@ app.use(express.json());
 //every cross-orgin request will be allowed
 app.use(cors());
 
-var connection = mysql.createConnection({
+const connection = mysql.createConnection({
   host: 'localhost',
   port: 8889,
   user: 'root',
@@ -58,17 +58,29 @@ app.put("/updateuser/:newhobby/:id", (request, response) => {
   
 })
 
+//delete
+app.delete("/deleteuser/:id", (request, response) => {
+  const sqlquery = "DELETE FROM elev WHERE ElevID = ?";
+  const id = request.params.id;
+
+  connection.query(sqlquery, [id], function (error, results, fields) {
+    if (error) throw error;
+    response.send('If This works, great!');
+  });
+  
+})
+
 //insert
 app.post('/insertuser', (request, response) => {
-  console.log(request.body)
-  const sql = "INSERT INTO elev ('Fornavn', 'Etternavn', 'Klasse', 'Hobby', 'Kjonn', 'DatamaskinID') values (?, ?, ?, ?, ?, ?)";
+  const sql = "INSERT INTO elev (Fornavn, Etternavn, Klasse, Hobby, Kjonn, DatamaskinID) values (?, ?, ?, ?, ?, ?)";
+  console.log(request.body.Fornavn)
   const values = [
     request.body.Fornavn,
     request.body.Etternavn,
-    request.body.Klasse,
+    parseInt(request.body.Klasse),
     request.body.Hobby,
     request.body.Kjonn,
-    request.body.DatamaskinID
+    parseInt(request.body.DatamaskinID)
   ]
   connection.query(sql, values, (error, data) => {
     if(error) {

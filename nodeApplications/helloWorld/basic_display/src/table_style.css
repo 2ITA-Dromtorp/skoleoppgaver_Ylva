@@ -1,7 +1,40 @@
 
-
+.deleteklikk {
+    background-color: rgb(164, 194, 223);
+    width: 80%;
+    height: 2em;
+   
+}
 
 
 .table{
     border: solid white 1px;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.99em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    background-color: rgb(168, 190, 148);
+    margin-bottom: 50%;
 }
+
+.table thead tr {
+    background-color: rgb(49, 50, 58);
+    color: #ffffff;
+    text-align: left;
+}
+
+.table th, .table td {
+    padding: 12px 15px;
+}
+
+.table tbody tr {
+    border-bottom: 1px solid #ffffff;
+}
+
+.table tbody tr:nth-of-type(even) {
+    background-color: #f8aaaa;
+}
+
+

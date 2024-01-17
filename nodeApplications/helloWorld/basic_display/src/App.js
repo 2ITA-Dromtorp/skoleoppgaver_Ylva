@@ -34,7 +34,6 @@ function App() {
           <button onClick={selectPush} id='select'> SELECT </button>
           <button onClick={updatePush} id='update'> UPDATE </button>
           <button onClick={insertPush} id='insert'> INSERT </button>
-          <button onClick={deletePush} id='delete'> DELETE </button>
         </div>
       </header>
       <div className="App-body">

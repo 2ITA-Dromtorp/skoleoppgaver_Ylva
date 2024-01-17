@@ -13,8 +13,8 @@ export default function Insert() {
     const [datamaskin, setDatamaskin] = useState("");
 
 
-    function handleInsert(event) {
-        event.preventDefault();
+    function handleInsert(e) {
+        e.preventDefault();
         /*const url = `http://localhost:3000/insertuser , ${fornavn}/${etternavn}/${klasse}/${hobby}/${kjonn}/${datamaskin}`;*/
         axios
             .post('http://localhost:3000/insertuser', {"Fornavn":fornavn, "Etternavn":etternavn, "Klasse":klasse, "Hobby":hobby, "Kjonn":kjonn, "DatamaskinID":datamaskin})
@@ -62,7 +62,7 @@ export default function Insert() {
                     </div>
 
                     <div className="insert">
-                        <button id='insertklikk'>UPDATE</button>
+                        <button id='insertklikk'>INSERT</button>
                     </div>
                     </form>
                 </div>
