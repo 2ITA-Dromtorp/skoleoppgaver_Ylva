@@ -16,7 +16,7 @@ const dbConfig = {
     database: 'kurs_login',
     host: 'localhost',
     port: 8889,
-}
+} 
  
 const connection = mysql.createConnection(dbConfig);
 connection.connect();

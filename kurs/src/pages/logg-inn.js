@@ -47,7 +47,7 @@ export default function LoggInn() {
                             console.error('Error fetching data:', error);
                         });
 
-            navigate("/etter")
+            navigate("/etter") 
         }
 
 

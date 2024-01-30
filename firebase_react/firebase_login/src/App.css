@@ -1,10 +1,11 @@
 .App {
   text-align: center;
   min-height: 100vh;
+  background-color: #423B0B;
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: rgb(65 82 31);
   min-height: 20vh;
   display: flex;
   flex-direction: column;
@@ -12,5 +13,18 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+.App-body {
+  background-color: rgb(168 159 104);
+  min-height: 70vh;
+}
+
+.login-input {
+  background-color: rgb(208 177 122);
+}
+
+.logg {
+  background-color: rgb(245 195 150);
 }
 
